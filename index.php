@@ -113,7 +113,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/njD3uw/20180108_111546.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'CREATIVE',
-        'text' => 'Admin -- Name : ALS       Location : West Java',
+        'text' => 'Admin -- Name : ALS            Location : West Java',
         'actions' => 
         array (
           0 => 
@@ -141,7 +141,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/nxZySG/20180108_111027.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'RESOURCE',
-        'text' => 'Admin -- Name : Lala       Location : Hongkong',
+        'text' => 'Admin -- Name : Lala              Location : Hongkong',
         'actions' => 
         array (
           0 => 
@@ -169,7 +169,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/b7Gv7G/20180108_111142.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'RESOURCE',
-        'text' => 'Admin -- Name : Dewa       Location : West Java',
+        'text' => 'Admin -- Name : Dewa              Location : West Java',
         'actions' => 
         array (
           0 => 
@@ -194,7 +194,7 @@ array (
       ),
       5 => 
       array (
-        'thumbnailImageUrl' => 'https://thumb.ibb.co/fcD8SG/20180108_111333.jpg',
+        'thumbnailImageUrl' => 'https://preview.ibb.co/npK41b/20180108_111333.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'HOME AS.',
         'text' => 'Admin -- Name : Juna Hermanza   Location : West Java',
@@ -225,7 +225,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/edtxMb/20180108_111247.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'HOME AS.',
-        'text' => 'Admin -- Name : Anissa       Location : West Java',
+        'text' => 'Admin -- Name : Anissa              Location : West Java',
         'actions' => 
         array (
           0 => 
@@ -253,7 +253,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'HOME AS.',
-        'text' => 'Admin -- Name : Alfariz       Location : Jakarta',
+        'text' => 'Admin -- Name : Alfariz              Location : Jakarta',
         'actions' => 
         array (
           0 => 
