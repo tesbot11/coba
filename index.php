@@ -232,7 +232,7 @@ array (
           array (
             'type' => 'uri',
             'label' => 'CHAT',
-            'uri' => '',
+            'uri' => 'http://tiny.cc/FIS_ALFARIZ',
           ),
           1 => 
           array (
