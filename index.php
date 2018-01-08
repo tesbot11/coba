@@ -113,7 +113,7 @@ array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/njD3uw/20180108_111546.jpg',
         'imageBackgroundColor' => '#FFFFFF',
         'title' => 'CREATIVE',
-        'text' => 'Admin -- Name : ALS            Location : West Java',
+        'text' => 'Admin -- Name : ALS                 Location : West Java',
         'actions' => 
         array (
           0 => 
