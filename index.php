@@ -1430,7 +1430,7 @@ array (
       array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'HOME AS.',
+        'title' => 'RESOURCE',
         'text' => 'Admin -- Name : Alfariz              Location : Jakarta',
         'actions' => 
         array (
