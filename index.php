@@ -630,6 +630,7 @@ function zodiak($keyword) {
 //show menu, saat join dan command,menu
 if ($type == 'join' || $command == 'Help') {
     $text .= "====[FIS BOT NEW!keywords]====";
+    $text .= "\n";
     $text .= "> /anime-syn [text]\n";
     $text .= "> /anime [text]\n";
     $text .= "> /manga-syn [text]\n";
