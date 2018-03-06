@@ -136,14 +136,18 @@ function ytdownload($keyword) {
     $response = Unirest\Request::get("$uri");
 
     $json = json_decode($response->raw_body, true);
-    $result = "Judul : \n";
-	$result .= $json['title'];
-	$result .= "\nType : ";
-	$result .= $json['data']['type'];
-	$result .= "\nUkuran : ";
-	$result .= $json['data']['size'];
-	$result .= "\nLink : ";
-	$result .= $json['data']['link'];
+    $result = "====[YouTube]====";
+    $result .= "\nStatus : ";
+    $result .= "\nMsg : ";
+    $result .= "\nJudul : ";
+    $result .= $json['0']['0'];
+    $result .= $json['total_count'];
+           $result .= "\nUkuran : ";
+           $result .= $json['data']['size'];
+           $result .= "\nLink : ";
+           $result .= $json['0']['4'];
+           $result .= "\n\nPencarian : YouTube";
+    $result .= "\n====[YouTube]====";
     return $result;
 }
 #-------------------------[Function]-------------------------#
