@@ -1283,7 +1283,6 @@ if($message['type']=='text') {
         );
     }
 }
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'sore' || $command == 'sore' ) {
@@ -1299,7 +1298,6 @@ if($message['type']=='text') {
         );
     }
 }
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'pagi' || $command == 'Pagi' ) {
@@ -1325,7 +1323,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Malam, apa kabar kamu malam ini?'.$profil->displayName
+                    'text' => 'Malam juga, apa kabar kamu malam ini?'.$profil->displayName
                 )
             )
         );
