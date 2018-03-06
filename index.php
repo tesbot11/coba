@@ -1285,7 +1285,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'sore' || $command == 'sore' ) {
+	    if ($command == 'sore' || $command == 'Selamat Sore' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
