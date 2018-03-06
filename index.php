@@ -131,21 +131,11 @@ function film($keyword) {
 }
 #-------------------------[Function]-------------------------#
 function ytdownload($keyword) {
-    $uri = "http://wahidganteng.ga/process/api/0470be5f700802ef5bc1db694e61d720/youtube-downloader?url=" . $keyword;
-
-    $response = Unirest\Request::get("$uri");
-
-    $json = json_decode($response->raw_body, true);
-    $result = "====[YouTube]====";
-    $result .= "\nJudul : ";
-    $result .= $json['0']['0'];
-    $result .= "\nDurasi : ";
-    $result .= $json['0']['1'];
-    $result .= "\nLink : ";
-    $result .= $json['0']['4'];
-    $result .= "\n\nPencarian : Google";
-    $result .= "\n====[YouTube]====";
-    return $result;
+$json=file_get_contents(“https://api.wapclub.xyz/api.php?id=”.
+$_GET[‘id’]); $json=json_decode($json, true); 
+foreach($json as $data){ echo ‘<a href=”‘.
+$data[‘url’].’&title=’.urlencode($data[‘title’]).'” >’.
+$data[‘downloadTitle’].'</a><br />’; } ?>
 }
 #-------------------------[Function]-------------------------#
 function anime($keyword) {
