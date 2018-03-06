@@ -137,16 +137,13 @@ function ytdownload($keyword) {
 
     $json = json_decode($response->raw_body, true);
     $result = "====[YouTube]====";
-    $result .= "\nStatus : ";
-    $result .= "\nMsg : ";
     $result .= "\nJudul : ";
     $result .= $json['0']['0'];
-    $result .= $json['total_count'];
-           $result .= "\nUkuran : ";
-           $result .= $json['data']['size'];
-           $result .= "\nLink : ";
-           $result .= $json['0']['4'];
-           $result .= "\n\nPencarian : YouTube";
+    $result .= "\nDurasi : ";
+    $result .= $json['0']['1'];
+    $result .= "\nLink : ";
+    $result .= $json['0']['4'];
+    $result .= "\n\nPencarian : Google";
     $result .= "\n====[YouTube]====";
     return $result;
 }
