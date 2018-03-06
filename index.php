@@ -830,13 +830,13 @@ if($message['type']=='text') {
 if($message['type']=='text') {
 	    if ($command == '/yt-get') {
 
-        $result = yt-download($options);
+        $result = ytdownload($options);
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => yt-download($options)
+                    'text' => ytdownload($options)
                 )
             )
         );
