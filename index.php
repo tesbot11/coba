@@ -1283,6 +1283,70 @@ if($message['type']=='text') {
         );
     }
 }
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'sore' || $command == 'sore' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'HALLO sore juga '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'pagi' || $command == 'Pagi' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Pagi juga,Semangat & Awali pagi dengan senyum ya '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Malam' || $command == 'good night' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Malam, apa kabar kamu malam ini?'.$profil->displayName
+                )
+            )
+        );
+    }
+}
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Baik' || $command == 'Kabar' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Tetap Semangat Ya! '.$profil->displayName
+                )
+            )
+        );
+    }
+}
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Hi' || $command == 'Hallo' ) {
