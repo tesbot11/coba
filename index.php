@@ -1345,7 +1345,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Halo' || $command == 'Hai' ) {
+	    if ($command == 'Halo' || $command == 'hallo' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -1360,7 +1360,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Hi' || $command == 'Hallo' ) {
+	    if ($command == 'Hi' || $command == 'hai' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -1375,7 +1375,22 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'udah' || $command == 'ok' ) {
+	    if ($command == 'Udah' || $command == 'udah' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'pinter kamu '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Oke' || $command == 'ok' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
