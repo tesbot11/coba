@@ -1373,6 +1373,36 @@ if($message['type']=='text') {
     }
 }
 //pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'udah' || $command == 'ok' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'pinter kamu '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'gila' || $command == 'peak' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Kok gitu ngomongnya ;( '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
 if($message['type']=='text')
 	if ($command == 'admin' || $command == 'Admin' )
 	{
