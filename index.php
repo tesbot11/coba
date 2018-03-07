@@ -664,6 +664,20 @@ if ($type == 'join' || $command == 'Help') {
         )
     );
 }
+if($message['type']=='sticker')
+{	
+	$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,							
+							'messages' => array(
+								array(
+										'type' => 'text',									
+										'text' => 'Terima Kasih Stikernya.'										
+									
+									)
+							)
+						);   			
+}
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
 $key = 'b5aa3723-6a95-42e6-9a8d-2de342d930cc'; //API SimSimi
