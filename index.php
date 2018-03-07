@@ -6,8 +6,8 @@ pyupyu
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
 
-$channelAccessToken = '38LF2BWWazL3QmSUxmKY0zF4ALygkHTHSJkdNCos8KHr8axUNCuh+sV3ZpNBTtGq0srXDwnD2a1fvA4h5yeBETKixBIbvw+qlUdMcmv9CTyVl6PunGdvkPOfMh6CqtVmuf6b0rOPg7g8Ipe43AnLOgdB04t89/1O/w1cDnyilFU='; //sesuaikan 
-$channelSecret = '17976403fa565616ca9d9f1bcb19223f';//sesuaikan
+$channelAccessToken = 'Zy6ATeIxvaym27SXYOippxT7A9+1QiMHRt2N1ZTWNyKihbiUG9G8t8I0GUnnh0C9EAPCyi0D/dUx3DlwAum3YJRLf5/CyMHwWhm2fMVLqdTNWZd5DT1v1zVc6LrdkgDh6RYQ3fqRIj++rtA/HdHm9QdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = '66c479621f6687f326879acf7aad9dce';//sesuaikan
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
@@ -663,6 +663,60 @@ if ($type == 'join' || $command == 'Help') {
             )
         )
     );
+}
+else
+$pesan=str_replace(" ", "%20", $pesan_datang);
+$key = 'b5aa3723-6a95-42e6-9a8d-2de342d930cc'; //API SimSimi
+$url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
+$json_data = file_get_contents($url);
+$url=json_decode($json_data,1);
+$diterima = $url['response'];
+if($message['type']=='text')
+{
+if($url['result'] == 404)
+	{
+		$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,													
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
+									)
+							)
+						);
+				
+	}
+else
+if($url['result'] != 100)
+	{
+		
+		
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
+									)
+							)
+						);
+				
+	}
+	else{
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => ''.$diterima.''
+									)
+							)
+						);
+						
+	}
 }
 if($message['type']=='text') {
 	    if ($command == '/qiblat') {
