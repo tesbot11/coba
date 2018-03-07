@@ -13,7 +13,7 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
 $userId 	= $client->parseEvents()[0]['source']['userId'];
 $groupId 	= $client->parseEvents()[0]['source']['groupId'];
-$replyToken = $client->parseEvents()[0]['replyToken'];
+$replyToken 	= $client->parseEvents()[0]['replyToken'];
 $timestamp	= $client->parseEvents()[0]['timestamp'];
 $type 		= $client->parseEvents()[0]['type'];
 
@@ -131,12 +131,24 @@ function film($keyword) {
 }
 #-------------------------[Function]-------------------------#
 function ytdownload($keyword) {
-$json=file_get_contents(“https://api.wapclub.xyz/api.php?id=”.
-$_GET[‘id’]); $json=json_decode($json, true); 
-foreach($json as $data){ echo ‘<a href=”‘.
-$data[‘url’].’&title=’.urlencode($data[‘title’]).'” >’.
-$data[‘downloadTitle’].'</a><br />’; } ?>
-}
+ $jsonData = file_get_contents("http://api.youtube6download.top/api/?id=");
+ $links = json_decode($jsonData,TRUE);
+ // FOR DIRECT HTML LINK
+ if(isset($links['data']['html'])) {
+  echo $links['data']['html'];
+ }
+ // FOR A HREF LINK
+ if(isset($links['data']['link'])) {
+  echo $links['data']['link'];
+ }
+ // FOR JAVASCRIPT EMBED CODE
+ if(isset($links['data']['js'])) {
+  echo $links['data']['js'];
+ }
+ // FOR IFRAME LINK EMBED CODE
+ if(isset($links['data']['iframe'])) {
+  echo $links['data']['iframe'];
+ }
 #-------------------------[Function]-------------------------#
 function anime($keyword) {
 
@@ -1304,7 +1316,6 @@ if($message['type']=='text') {
         );
     }
 }
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Malam' || $command == 'good night' ) {
@@ -1320,7 +1331,6 @@ if($message['type']=='text') {
         );
     }
 }
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Baik' || $command == 'Kabar' ) {
