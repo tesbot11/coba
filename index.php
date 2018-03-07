@@ -131,7 +131,7 @@ function film($keyword) {
 }
 #-------------------------[Function]-------------------------#
 function ytdownload($keyword) {
-    $uri = "http://wahidganteng.ga/process/api/b82582f5a402e85fd189f716399bcd7c/youtube-downloader?url=" . $keyword;
+    $uri = "http://wahidganteng.ga/process/api/0470be5f700802ef5bc1db694e61d720/youtube-downloader?url=" . $keyword;
 
     $response = Unirest\Request::get("$uri");
 
@@ -630,6 +630,7 @@ function zodiak($keyword) {
 //show menu, saat join dan command,menu
 if ($type == 'join' || $command == 'Help') {
     $text .= "====[FIS BOT NEW!keywords]====";
+    $text .= "> \n";
     $text .= "> /anime-syn [text]\n";
     $text .= "> /anime [text]\n";
     $text .= "> /manga-syn [text]\n";
