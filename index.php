@@ -1269,6 +1269,81 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'Pagi' || $command == 'pagi' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Pagi juga, Senyum ya! '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Siang' || $command == 'siang' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Siang juga, Jangan lupa makan siang ya '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Sore' || $command == 'sore' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Ngopi dulu '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Malam' || $command == 'Night' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Malam juga, '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'baik' || $command == 'Baik' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Tetap Semangat Ya! '.$profil->displayName
+                )
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'Halo' || $command == 'Hai' ) {
 
         $balas = array(
@@ -1276,7 +1351,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO '.$profil->displayName
+                    'text' => 'HALLO apa kabar'.$profil->displayName
                 )
             )
         );
@@ -1291,7 +1366,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO '.$profil->displayName
+                    'text' => 'Hai juga '.$profil->displayName
                 )
             )
         );
@@ -1428,29 +1503,29 @@ array (
       ),
       4 => 
       array (
-        'thumbnailImageUrl' => 'https://preview.ibb.co/b7Gv7G/20180108_111142.jpg',
+        'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
         'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'RESOURCE',
-        'text' => 'Admin -- Name : Dewa              Location : West Java',
+        'title' => 'HOME AS.',
+        'text' => 'Admin -- Name : Alfariz              Location : Jakarta',
         'actions' => 
         array (
           0 => 
           array (
             'type' => 'uri',
             'label' => 'CHAT',
-            'uri' => 'http://tiny.cc/FIS_DEWA',
+            'uri' => 'http://tiny.cc/FIS_ALFARIZ',
           ),
           1 => 
           array (
             'type' => 'uri',
             'label' => 'SMULE',
-            'uri' => 'https://www.smule.com/FIS_Dewa_Hivo',
+            'uri' => 'https://www.smule.com/FIS_Alfariz',
           ),		  
           2 => 
           array (
             'type' => 'message',
             'label' => 'view detail',
-            'text' => 'FIS_Dewa',
+            'text' => 'FIS_Alfariz',
           ),
         ),
       ),
@@ -1507,34 +1582,6 @@ array (
             'type' => 'message',
             'label' => 'view detail',
             'text' => 'FIS_Nisa',
-          ),
-        ),
-      ),
-      7 => 
-      array (
-        'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
-        'imageBackgroundColor' => '#FFFFFF',
-        'title' => 'HOME AS.',
-        'text' => 'Admin -- Name : Alfariz              Location : Jakarta',
-        'actions' => 
-        array (
-          0 => 
-          array (
-            'type' => 'uri',
-            'label' => 'CHAT',
-            'uri' => 'http://tiny.cc/FIS_ALFARIZ',
-          ),
-          1 => 
-          array (
-            'type' => 'uri',
-            'label' => 'SMULE',
-            'uri' => 'https://www.smule.com/FIS_Alfariz',
-          ),		  
-          2 => 
-          array (
-            'type' => 'message',
-            'label' => 'view detail',
-            'text' => 'FIS_Alfariz',
           ),
         ),
       ),
