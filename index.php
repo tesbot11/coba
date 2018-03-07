@@ -1254,7 +1254,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Bot' || $command == 'fisbot' ) {
+	    if ($command == 'Bot' || $command == 'bot' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
